@@ -1,0 +1,26 @@
+package com.baidu.www;
+
+public class Demo01 {
+	public static void main(String[]args){
+		//定义变量
+		//声明:数据类型 变量名
+		String name;
+		//赋值 直接通过变量名=值;
+		name ="wangyvqi";
+		System.out.print(name);
+		//syso+alt+/
+		System.out.println();
+		
+		//方法二:声明并赋值ֵ
+		String name2="你好啊";
+		//+拼接符:拼接字符串操作
+		System.out.println((name+name2));
+		
+		//方法三:多个同类型变量声明并赋值
+		//数据类型 变量1,变凉2=值ֵ
+		int a,b,c=6,d,e=8;
+		a=b=c;
+		System.out.println(a);
+		System.out.println(c);
+	}
+}
