@@ -1,0 +1,59 @@
+package day01;
+//
+//public class nihao {
+//	public static void main(String args[]){
+//		// TODO �Զ����ɵķ������
+//		System.out.println("hello would");
+//		f
+//	}
+//}
+
+import java.util.Scanner; 
+
+//public class hello {
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in); 
+//
+//        System.out.print("请输入一个数: ");
+//        int number = scanner.nextInt(); 
+//
+//        if (number >= 10) {
+//            System.out.println("你输入的大于10");
+//        } else {
+//            System.out.println("你输入的小于10");
+//        }
+//
+//        scanner.close(); 
+//    }
+//}
+]
+/**
+ * 
+ * 
+ * 
+ */
+public class hello{
+	//main+alt+\ 快捷键
+	
+	//1.层级之间必须有缩进
+	//2.一行只写一句代码
+	//3.区分大小写
+	//java可以用中文(unicode)
+	public static void main(String[]args)
+	{
+		int a=0;
+		//println==print+\n
+		//ctrl+s 
+		for(int i=0;i<5000;i++){
+		System.out.print("原神启动!");
+		if(i%40==0)System.out.println();
+		}
+	}
+}
+class A
+{
+	public static void main(String[]args)
+	{
+//		System.out.
+	}
+}
