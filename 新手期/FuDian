@@ -1,0 +1,14 @@
+package com.qf.demo;
+
+public class FuDian {
+	public static void main(String[]args){
+		//只要定义为浮点数,即使给他赋值为正数,输出为也是浮点数
+		//4字节
+		float num=1f;
+		//浮点数 默认为double类型
+		//double转成float类型---在后面加上f/F
+		//8字节
+		double num2=3.4;
+		System.out.println(num);
+	}
+}
