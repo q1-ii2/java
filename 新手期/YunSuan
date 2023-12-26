@@ -1,0 +1,39 @@
+package com.qf.demo;
+
+public class YunSuan {
+			public static void main(String[]args){
+			//1.算术运算符:+,-,*,%
+				int a=7,b=6;
+				int c=a+b;
+				//一元运算符++,--
+				//a++ 取值 a+1
+				//先打印,再做++
+				//a++=7 a=a+1=8
+				System.out.println(++a);
+				System.out.println(a++);
+				//先做++,再打印
+				//++a=8+1=9		a=9 
+				System.out.println(a++);
+//			2.赋值运算符 =，+=，-=，*=，/=，%=
+			a=a+b;
+//			x=1001			x%10
+//			a+b=5;		等号左边必须是变量
+			a+=b; 		//相当于a=a+b;
+//			x=1001		取末尾x%10  削末尾x/10
+			
+//			3.关系运算符> < == != <= >=
+//			返回都为布尔类型的结果
+			System.out.println(a==b);
+			
+//			4.逻辑运算符  与&&(一假则假)  或||  (一真为真)反!
+//			我是男声 && 刚满十八岁？
+//			我抽烟 || 我是男生
+//			a = true  ！a=false
+			
+//			5.三元运算符		布尔类型表达式？结果1：结果2
+//			boolean bo=2<32?true:false;
+			int bo=2<32?1:32;
+			System.out.println(bo);
+			
+			}
+}
