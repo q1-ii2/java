@@ -1,0 +1,20 @@
+package com.qf.demo;
+/**
+ * 
+ * @author 王
+ *布尔类型
+ */
+public class Bool {
+		public static void main(String[]args){
+			//取值范围true/false
+			//可以表达式直接赋值
+			boolean x=2>1;
+			int b=2;
+			//占用一个字节
+			boolean a=true;
+			System.out.println(a);
+			//不能参与算数运算
+			//System.out.println(a+b);
+	
+		}
+}
