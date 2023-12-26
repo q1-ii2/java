@@ -1,0 +1,19 @@
+package com.baidu.www;
+/**
+ * 
+ * 
+ *
+ */
+public class Demo02 {
+	public static void main(String[]args)
+	{
+		//-128~127
+		byte a=126;
+		//-32768~-32767
+		short b=32767;
+		//-2147492648~2147492547 4个字节
+		int c=214749264;
+		//int为默认数据类型,如需想要成为long,在数值后面加上L/l
+		long d=5l;
+	}
+}
