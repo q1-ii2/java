@@ -1,0 +1,15 @@
+package com.qf.demo;
+
+public class ZhuanHuan {
+				public static void main(String[]args){
+					int a;
+					short b=20;
+					//可以小转大
+					//大转小需要强制类型转换
+					short x;
+					int y=20;
+					x=(short)y;
+					a=b;
+					System.out.println(a);
+				}
+}
