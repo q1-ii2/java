@@ -1,0 +1,9 @@
+package 课堂练习;
+
+public class 计算1到100之间所有偶数的和 {
+	public static void main(String[] args) {
+			int x=0;
+			for(int i=0;i<=100;i++)if(i%2==0)x+=i;
+			System.out.println(x);
+	}
+}
