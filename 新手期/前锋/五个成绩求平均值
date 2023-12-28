@@ -1,0 +1,25 @@
+package 课堂练习;
+
+import java.util.Scanner;
+
+public class 学生成绩 {
+    public static void main(String[] args) {
+        int totalSubjects = 5; // 总科目数
+        double sum = 0;
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        // 输入五个学生成绩
+        for (int i = 1; i <= totalSubjects; i++) {
+            System.out.print("请输入第 " + i + " 个学生成绩: ");
+            double score = scanner.nextDouble();
+            sum += score;
+        }
+        
+        // 计算平均值
+        double average = sum / totalSubjects;
+        System.out.println("这五个学生成绩的平均值为: " + average);
+        
+        scanner.close(); // 关闭 Scanner
+    }
+}
