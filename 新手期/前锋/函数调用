@@ -1,0 +1,51 @@
+package com.qf.function;
+
+import java.util.Scanner;
+
+/*
+ * 调用
+ */
+
+public class demo01 {
+	public static void main(String[] args) {
+//			调用m1
+//		m1();
+		System.out.println("请输入一个数");
+		Scanner sc=new Scanner(System.in);
+		int number=sc.nextInt();
+		int x=num(number);
+		System.out.println("阶乘为:"+x);
+		for(int i=0;i<10;i++)
+		System.out.println(fbnq(i)+" ");
+	}
+//	所有能用递归解决的问题都能用循环解决
+//	当解决复杂问题时，递归的实现方式更为简单
+//	public static int num(int x){
+//	if(x==0||x==1){
+//		return 1;
+//		}
+//	else return (x*num(x-1));
+//	}
+//	阶乘
+	public static int num(int x){
+		if(x==1||x==0){return 1;};
+		return (x*num(x-1));
+	}
+//	斐波那契数
+	public static int fbnq(int x){
+		if(x==1||x==0){return x;};
+		return fbnq(x-1)+fbnq(x-2);
+	}
+	public static void m1(){
+		System.out.println("----m1方法开启");
+//		优先执行方法内部的代码，结束后，返回调用处，继续向下执行
+//		自己调用自己---递归，必须有出口，不然就无穷递归了
+//		喝十杯水---喝一杯水，循环能解决的问题一般递归都可以解决
+		m1();
+		System.out.println("----m1方法关闭");
+	}
+	public static void m2(){
+		System.out.println("----m1方法开启");
+		System.out.println("----m1方法关闭");
+	}
+}
