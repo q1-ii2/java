@@ -1,0 +1,19 @@
+package 课堂练习;
+
+import java.util.Scanner;
+
+public class 计算n的阶乘 {
+	public static void main(String[] args) {
+		System.out.println("please input a number:");
+		Scanner n =new Scanner(System.in);
+		int number =n.nextInt();
+		int i=0;
+		int x=1;
+		for(i=1;i<=number;i++)
+		{
+			x*=i;
+		}
+		System.out.println(x);
+	}
+	
+}
