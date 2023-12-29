@@ -1,0 +1,14 @@
+package com.qf.feng;
+
+public class BookTest {
+	public static void main(String[] args) {
+		Book book = new Book();
+		book.setKind("漫画");
+		book.setName("阿衰");
+		book.setPrice(-39);
+		book.setPage(200);
+		book.detail();
+		Book book1=new Book("小说","我的青春恋爱物语果然有问题！",-150,200);
+	book1.detail();
+	}
+}
