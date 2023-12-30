@@ -1,0 +1,92 @@
+package com.itheima.demo1;
+
+import java.util.Scanner;
+
+public class test1 {
+    public static void main(String[] args) {
+//        digit();
+
+//        Scanner ca=new Scanner(System.in);
+//        System.out.println("请输入一个数(1-7):");
+//        int i=ca.nextInt();
+//    holiday(i);
+//    mountain();
+//        Palindromic();
+//        Division();
+//       死循环后面不能加东西了
+//        for(;;){
+//            System.out.println("HelloWorld");
+//        }
+        seven();
+    }
+
+
+public static void digit(){
+    Scanner ne = new Scanner(System.in);
+    System.out.println("请输入一个数:");
+    int num = ne.nextInt();
+    int ge=num%10;
+    int shi=num/10%10;
+    int bai=num/100%10;
+    System.out.println("个位是："+ge+"\n十位是："+shi+"\n百位是："+bai);
+}
+    public static void holiday(int i){
+        switch(i){
+            case 1,2,3,4,5-> System.out.println("工作日");
+            case 6,7-> System.out.println("假日");
+            default -> System.out.println("星期非法");
+        }
+    }
+    public static void mountain(){
+        int count=0;
+        for(double i=0.1;i<8844430;){
+            i+=i;
+            count++;
+        }
+        System.out.println(count);
+    }
+    //计算是不是回文数
+    public static void Palindromic(){
+        Scanner a = new Scanner(System.in);
+        int x = a.nextInt();
+        int temp = x;
+//       记录倒过来之后的结果
+        int num = 0;
+        //12345
+        while (x != 0) {
+            //从右往左获取每一位数字
+            int ge = x % 10;
+            //修改一下x的值
+            x = x / 10;
+            //把当前获取到的数字拼接到最右边
+            num = num * 10 + ge;
+        }
+        System.out.println(num == temp);
+    }
+    public static void Division(){
+        System.out.println("请输入被除数:");
+        Scanner a=new Scanner(System.in);
+        int dividend = a.nextInt();
+        System.out.println("请输入除数:");
+        Scanner b=new Scanner(System.in);
+        int divisor = b.nextInt();
+        int count=0;
+        while(dividend>=divisor){
+            dividend=dividend-divisor;
+            count++;
+        }
+        System.out.println("得出的商是："+count+"得出的余数是："+dividend);
+    }
+    public static void seven(){
+        for (int i = 1; i < 100; i++) {
+            if(i%10==0) System.out.println();
+            if(i%7==0||i%10==7||i/10==7){
+                System.out.print(" 过");
+                continue;
+            }
+            System.out.print("  "+i);
+
+        }
+    }
+}
+
