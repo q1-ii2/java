@@ -1,0 +1,37 @@
+package function;
+
+import java.util.Scanner;
+
+public class MethodDemo3 {
+    public static void main(String[] args) {
+        //圆的面积
+        getArea(1.5);
+        System.out.println("键盘键入第一个方形的长和宽:");
+        Scanner sc = new Scanner(System.in);
+        double len1=sc.nextDouble();
+        double width1=sc.nextDouble();
+        System.out.println("键盘键入第二个方形的长和宽:");
+        Scanner sn = new Scanner(System.in);
+        double len2=sn.nextDouble();
+        double width2=sn.nextDouble();
+        double FirstSquare=area(len1,width1);
+        System.out.println("第一个的面积为："+FirstSquare);
+        double SecondSquare=area(len2,width2);
+        System.out.println("第二个的面积为："+SecondSquare);
+        compare(FirstSquare,SecondSquare);
+
+    }
+    public static void getArea(double radius){
+        System.out.println(radius*radius*3.14);
+    }
+    public static double area(double len,double width){
+        return len*width;
+    }
+    public static void compare(double x,double y){
+        if(x>y){
+            System.out.println("第一个方形大");
+        }else if(x<y){
+            System.out.println("第二个方形大");
+        }else System.out.println("他俩一样大");
+    }
+}
