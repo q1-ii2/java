@@ -1,0 +1,22 @@
+package function;
+
+import java.util.Scanner;
+
+public class MethodDemo2 {
+    public static void main(String[] args) {
+    printGFInfo();
+        System.out.println("键盘键入两个数:");
+        Scanner sc = new Scanner(System.in);
+        int num1=sc.nextInt();
+        int num2=sc.nextInt();
+    add(num1,num2);
+    }
+    public static void printGFInfo(){
+        System.out.println("锦木千束:");
+        System.out.println("The best!");
+        System.out.println("is very beautiful girl!");
+    }
+    public static void add(int num1,int num2){
+        System.out.println("两个数相加得："+(num1+num2));
+    }
+}
