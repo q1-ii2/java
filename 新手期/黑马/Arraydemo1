@@ -1,0 +1,33 @@
+package com.itheima.demo1;
+
+public class Arraydemo1 {
+    public static void main(String[] args) {
+        int []arr1=new int[]{1,2,3};
+        int []arr2={1,2,3};
+
+        String []arr3=new String[]{"张三","李四","王禹棋"};
+        String []arr4={"张三","李四","王禹棋"};
+
+        double[]arr5=new double[]{1.5,2.4,3.3,4.2,5.1};
+        double[]arr6={1.5,2.4,3.3,4.2,5.1};
+        for (int i1 = 0; i1 < 3; i1++) {
+            System.out.println(arr1[i1]);
+        }
+        for (int i = 0; i < 3; i++) {
+            System.out.println(arr3[i]);
+        }
+        for (int i = 0; i < 5; i++) {
+            System.out.println(arr6[i]);
+        }
+        System.out.println(arr1);//[I@3b07d329
+        //拓展:
+        //解释一下地址的格式含义
+        //[表示当前是一个数组
+        //I:表示当前数组里面的元素都是int类型的
+        //@:表示一个间隔符号。(固定格式)
+        //3b07d329才是数组真正的地址值
+        //平时我们习惯性的会把这个整体叫做数组的地址值
+
+
+    }
+}
