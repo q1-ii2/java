@@ -1,0 +1,40 @@
+package com.itheima.demo1;
+
+import java.util.Random;
+
+public class Arraydemo3 {
+    public static void main(String[] args) {
+//        1.定义数组用来存储5个值
+        int[]arr={33,5,22,44,55,20,50,3};
+//        2.定义一个变量max用来存储最大值
+//        临时认为0索引的数据是最大值
+        int max=arr[0];
+//        3.循环获取数组中的每一个元素
+//        拿着每一个元素跟max进行比较
+        for (int i = 1; i < arr.length; i++) {
+            if(arr[i]>max)
+                max=arr[i];
+        }
+        System.out.println(max);
+
+        int[]a=new int[10];
+        Random r=new Random();
+        int total=0;
+        int average=0;
+        System.out.println("生成的10个随机数为：");
+        for (int i = 0; i < a.length; i++) {
+            int Randomnumber=r.nextInt(100)+1;
+            a[i]=Randomnumber;
+            total+=a[i];
+            System.out.print(" "+a[i]);
+        }
+        System.out.println("\n  总和为："+total);
+        average=total/a.length;
+        System.out.println("平均值为："+average);
+        int count=0;
+        for (int i = 0; i < a.length; i++) {
+            if(a[i]<average)count++;
+        }
+        System.out.println("有"+count+"个数小于平均值");
+    }
+}
