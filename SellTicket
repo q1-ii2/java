@@ -9,8 +9,8 @@ import java.util.Scanner;
  */
 public class SellTicket {
     public static void main(String[] args) {
-        System.out.println("请输入你想设置的机票原价格(头等舱)：");
         Scanner sc=new Scanner(System.in);
+        System.out.println("请输入你想设置的机票原价格(头等舱)：");
         double firstPrice=sc.nextDouble();
         System.out.println("请输入你想设置的机票原价格(经济舱)：");
         double ecoPrice=sc.nextDouble();
@@ -18,18 +18,25 @@ public class SellTicket {
         int mouth=sc.nextInt();
         System.out.println("您想买头等舱还是经济舱呢？(头等舱输入1,经济舱输入0)：");
         int i=sc.nextInt();
-        boolean flag=false;
-        switch(mouth){
-            case 11,12,1,2,3,4-> flag=true;
-//                    System.out.println("为淡季(头等舱7折,经济舱6.5折)");
-            case 5,6,7,8,9,10->flag=false;
-//                    System.out.println("为旺季(头等舱9折,经济舱8.5折)");
-        }
+//        boolean flag=false;
+//        switch(mouth){
+//            case 11,12,1,2,3,4-> flag=true;
+////                    System.out.println("为淡季(头等舱7折,经济舱6.5折)");
+//            case 5,6,7,8,9,10->flag=false;
+////                    System.out.println("为旺季(头等舱9折,经济舱8.5折)");
+//        }
+//        double x=0;
+//        if(flag){
+//             x=OffSeason(firstPrice,ecoPrice,i);
+//        }else {
+//            x=PeakSeason(firstPrice,ecoPrice,i);
+//        }
+//        System.out.println("您选择的机票的价格为:"+x);
+//
         double x=0;
-        if(flag){
-             x=OffSeason(firstPrice,ecoPrice,i);
-        }else {
-            x=PeakSeason(firstPrice,ecoPrice,i);
+        switch(mouth){
+            case 11,12,1,2,3,4-> x=OffSeason(firstPrice,ecoPrice,i);
+            case 5,6,7,8,9,10->x=PeakSeason(firstPrice,ecoPrice,i);
         }
         System.out.println("您选择的机票的价格为:"+x);
     }
